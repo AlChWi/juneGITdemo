@@ -16,5 +16,16 @@ class ViewController: UIViewController {
     }
 
 
+    @IBAction func alertButton(_ sender: UIButton) {
+        let alert = UIAlertController(title: "photo access", message: "do you allow using photos", preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+        alert.addAction(okAction)
+        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+        alert.addAction(cancelAction)
+        self.present(alert, animated: true)
+        
+    }
+    @IBAction func sheetButton(_ sender: UIButton) {
+    }
 }
 
