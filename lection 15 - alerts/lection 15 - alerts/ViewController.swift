@@ -26,6 +26,14 @@ class ViewController: UIViewController {
         
     }
     @IBAction func sheetButton(_ sender: UIButton) {
+        let alert = UIAlertController(title: "choose", message: "choose", preferredStyle: .actionSheet)
+        let handler: (UIAlertAction) -> Void = { action in
+            
+        }
+        alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+        alert.addAction(UIAlertAction(title: "spider-man", style: .default, handler: nil))
+        alert.addAction(UIAlertAction(title: "ALLADIN", style: .default, handler: nil))
+        present(alert, animated: true)
     }
 }
 
